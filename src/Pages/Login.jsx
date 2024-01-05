@@ -13,8 +13,7 @@ const Login = () => {
             errorMessage:store.authReducer.errorMessage
         }
     },shallowEqual)
-    // console.log(isAuth,isError,name,avatar)
-    // const location=useLocation();
+    
     const dispatch=useDispatch();
    const nav=useNavigate()
     
@@ -23,9 +22,8 @@ const Login = () => {
     
         const { email, password } = input;
         const userData = { email, password };
-    
-       
         dispatch(getLog(userData));
+        
       };
     
       

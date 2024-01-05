@@ -24,8 +24,9 @@ const ProductModal = ({ isOpen, onClose }) => {
   const handleAddProduct = () => {
     const {name,gender,category,price,description,picture}=formData;
     const newProd={name,gender,category,price,description,picture}
+    // console.log(newProd)
 dispatch(postProd(newProd))
-// dispatch(getProd())
+dispatch(getProd())
     onClose();
   };
 
@@ -94,8 +95,8 @@ dispatch(postProd(newProd))
                       className="border rounded w-full py-2 px-3"
                     >
                       <option value="">Select Gender</option>
-                      <option value="Male">Male</option>
-                      <option value="Female">Female</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
                     </select>
                   </div>
                   <div className="mt-4">
@@ -109,9 +110,9 @@ dispatch(postProd(newProd))
                       className="border rounded w-full py-2 px-3"
                     >
                       <option value="">Select Category</option>
-                      <option value="Makeup">Makeup</option>
-                      <option value="Skincare">Skincare</option>
-                      <option value="Haircare">Haircare</option>
+                      <option value="makeup">Makeup</option>
+                      <option value="skincare">Skincare</option>
+                      <option value="haircare">Haircare</option>
                     </select>
                   </div>
                   <div className="mt-4">

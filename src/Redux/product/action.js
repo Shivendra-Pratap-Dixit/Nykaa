@@ -1,22 +1,52 @@
 import { DELETE_PRODUCT } from "./actionType"
 import { EDIT_PRODUCT, GET_PRODUCT, PROD_POST_FAIL, PROD_POST_REQ, PROD_POST_SUCC } from "./actionType"
 import axios from "axios"
-export const postProd=(newProd)=>(dispatch)=>{
-    const token=localStorage.getItem("token");
-    dispatch({type:PROD_POST_REQ})
-    let prod=axios.post("https://nykaa-irdl.onrender.com/api/products",{
+
+
+
+// export const postProd=(newProd)=>(dispatch)=>{
+//     const token=localStorage.getItem("token");
+//     dispatch({type:PROD_POST_REQ})
+//     let prod=axios.post("https://nykaa-irdl.onrender.com/api/products",{
+//         headers: {
+//           authorization: `Bearer ${token}`,
+//         },
+//         params: newProd,
+//       }).then((res)=>{
+//         console.log(res.data)
+//         dispatch({type:PROD_POST_SUCC,payload:res.data})
+//     }).catch(()=>{
+//         dispatch({type:PROD_POST_FAIL})
+//     })
+//     return prod;
+// }
+
+export const postProd = (newProd) => (dispatch) => {
+  const token = localStorage.getItem("token");
+  dispatch({ type: PROD_POST_REQ });
+
+  axios
+    .post(
+      "https://nykaa-irdl.onrender.com/api/proucts",
+      newProd, 
+      {
         headers: {
           authorization: `Bearer ${token}`,
         },
-        params: newProd,
-      }).then((res)=>{
-        console.log(res.data)
-        dispatch({type:PROD_POST_SUCC,payload:res.data})
-    }).catch(()=>{
-        dispatch({type:PROD_POST_FAIL})
+      }
+    )
+    .then((res) => {
+      console.log(res.data);
+      dispatch({ type: PROD_POST_SUCC, payload: res.data });
     })
-    return prod;
-}
+    .catch((error) => {
+      console.error("Error adding product:", error);
+      dispatch({ type: PROD_POST_FAIL, payload: error.message });
+    });
+};
+
+
+
 export const getProd=(paramsobj)=>(dispatch)=>{
     const token=localStorage.getItem("token");
     dispatch({type:PROD_POST_REQ})
@@ -36,11 +66,10 @@ export const getProd=(paramsobj)=>(dispatch)=>{
 export const editProd=(id,newProd)=>(dispatch)=>{
     const token=localStorage.getItem("token");
     dispatch({type:PROD_POST_REQ})
-    let prod=axios.patch(`https://nykaa-irdl.onrender.com/api/products/${id}`,{
+    let prod=axios.patch(`https://nykaa-irdl.onrender.com/api/products/${id}`,newProd,{
         headers: {
           authorization: `Bearer ${token}`,
-        },
-        params: newProd,
+        }
       }).then((res)=>{
         dispatch({type:EDIT_PRODUCT})
     }).catch(()=>{
