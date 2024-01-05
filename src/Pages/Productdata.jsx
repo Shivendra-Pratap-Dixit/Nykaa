@@ -19,7 +19,7 @@ const Productdata = () => {
   useEffect(() => {
     dispatch(getProd(paramsobj));
   }, [searchParams]);
-
+// console.log(products)
   return (
     <table className="min-w-full bg-white border border-gray-300">
       <thead>
@@ -35,7 +35,7 @@ const Productdata = () => {
       <tbody>
         {products?.map((item) => (
           <tr key={item.id} className="border-b">
-            <td className="py-2 px-4">{item.name}</td>
+            <td className="flex items-center gap-4 py-2 px-4"><img className='w-8 h-8 rounded-lg ' src={item.picture} alt='avtar'/>{item.name}</td>
             <td className="py-2 px-4">{item.gender}</td>
             <td className="py-2 px-4">{item.category}</td>
             <td className="py-2 px-4">{item.price}</td>

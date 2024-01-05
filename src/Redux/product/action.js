@@ -10,6 +10,7 @@ export const postProd=(newProd)=>(dispatch)=>{
         },
         params: newProd,
       }).then((res)=>{
+        console.log(res.data)
         dispatch({type:PROD_POST_SUCC,payload:res.data})
     }).catch(()=>{
         dispatch({type:PROD_POST_FAIL})
@@ -25,7 +26,7 @@ export const getProd=(paramsobj)=>(dispatch)=>{
         },
         params: paramsobj,
       }).then((res)=>{
-console.log(res.data)
+// console.log(res.data)
         dispatch({type:GET_PRODUCT,payload:res.data})
     }).catch(()=>{
         dispatch({type:PROD_POST_FAIL})

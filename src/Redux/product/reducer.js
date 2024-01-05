@@ -12,7 +12,7 @@ switch(type){
         return {...state,isLoading:true}
     }
     case PROD_POST_SUCC:{
-        return {...state,isLoading:false,isError:false}
+        return {...state,isLoading:false,isError:false,products:payload}
     }
     case PROD_POST_FAIL:{
         return {...state,isLoading:false,isError:true}

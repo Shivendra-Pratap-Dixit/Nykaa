@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { getProd, postProd } from '../Redux/product/action';
 
 const ProductModal = ({ isOpen, onClose }) => {
+  const dispatch=useDispatch()
   const [formData, setFormData] = useState({
-    productName: '',
+    name: '',
     gender: '',
     category: '',
     price: '',
     description: '',
-    avatar: '',
+    picture: '',
   });
 
   const handleInputChange = (e) => {
@@ -17,9 +20,12 @@ const ProductModal = ({ isOpen, onClose }) => {
       [name]: value,
     }));
   };
-
+// console.log(formData)
   const handleAddProduct = () => {
-    
+    const {name,gender,category,price,description,picture}=formData;
+    const newProd={name,gender,category,price,description,picture}
+dispatch(postProd(newProd))
+// dispatch(getProd())
     onClose();
   };
 
@@ -70,10 +76,11 @@ const ProductModal = ({ isOpen, onClose }) => {
                     </label>
                     <input
                       type="text"
-                      name="productName"
-                      value={formData.productName}
+                      name="name"
+                      value={formData.name}
                       onChange={handleInputChange}
                       className="border rounded w-full py-2 px-3"
+                      placeholder='Enter Product name'
                     />
                   </div>
                   <div className="mt-2">
@@ -109,18 +116,43 @@ const ProductModal = ({ isOpen, onClose }) => {
                   </div>
                   <div className="mt-4">
                     <label className="block text-gray-700 text-sm font-bold mb-2">
+                      Price:
+                    </label>
+                    <input
+                      type="text"
+                      name="price"
+                      value={formData.price}
+                      onChange={handleInputChange}
+                      className="border rounded w-full py-2 px-3"
+                      placeholder="Enter Price"
+                    />
+                  </div>
+                  <div className="mt-4">
+                    <label className="block text-gray-700 text-sm font-bold mb-2">
+                      Description:
+                    </label>
+                    <input
+                      type="text"
+                      name="description"
+                      value={formData.description}
+                      onChange={handleInputChange}
+                      className="border rounded w-full py-2 px-3"
+                      placeholder="Enter Product description"
+                    />
+                  </div>
+                  <div className="mt-4">
+                    <label className="block text-gray-700 text-sm font-bold mb-2">
                       Avatar URL:
                     </label>
                     <input
                       type="text"
-                      name="avatar"
-                      value={formData.avatar}
+                      name="picture"
+                      value={formData.picture}
                       onChange={handleInputChange}
                       className="border rounded w-full py-2 px-3"
                       placeholder="Enter Avatar URL"
                     />
                   </div>
-                  {/* Add more input fields for other product properties */}
                 </div>
               </div>
             </div>
