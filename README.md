@@ -5,7 +5,7 @@
 <p align="center">
     <img src="https://img.shields.io/badge/React_(18.2.0)-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="reactjs" />
     <img src="https://img.shields.io/badge/Redux_(4.2.0)-593D88?style=for-the-badge&logo=redux&logoColor=white" alt="redux" />
-    <img src="https://img.shields.io/badge/tailwind%20css-8A2BE2" alt="tailwind"/>   
+    <img src="https://img.shields.io/badge/Tailwindcss_(3.0.0)-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="tailwind"/>   
     <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
     
 </p>
