@@ -1,70 +1,57 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">Nykaa Admin Dashboard</h1> 
+<h2 align="center">Web application for Admin Dashboard.</h2> 
+<br />
+<p align="center">
+    <img src="https://img.shields.io/badge/React_(18.2.0)-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="reactjs" />
+    <img src="https://img.shields.io/badge/Redux_(4.2.0)-593D88?style=for-the-badge&logo=redux&logoColor=white" alt="redux" />
+    <img src="https://img.shields.io/badge/Tailwindcss_(3.0)-20232A?style=for-the-badge&logo=tailwindcss&logoColor=61DAFB" alt="tailwind"/>   
+    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
+    
+</p>
+## ⚙️ **BACKEND DEV**
 
-## Available Scripts
+![](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white "Nodejs")
+![Express js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge "Express js")
 
-In the project directory, you can run:
+## 📅 **DATABASES**
 
-### `npm start`
+![Mongodb](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white "Mongodb")
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h3 align="center"><a href="https://verdant-profiterole-6d8e54.netlify.app/"><strong>Want to see a live preview »</strong></a></h3>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# <h1><a href="https://verdant-profiterole-6d8e54.netlify.app/">Nykaa</a> Website(Learning Purpose)</h1>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Nykaa Dashboard for admin in admin can add delete the product and see the products by chart
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Features
+- Homepage
+- Login/Signup User Account
+- Redux Authentication
+- Admin Dashboard
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# <h2>Home Page : </h2>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Screenshot 2024-01-10 120501](https://github.com/Shivendra-Pratap-Dixit/Nykaa/assets/112815087/c50e1147-742f-4146-a3e9-c2a56940bb53)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# <h2>Login Page : </h2>
+![Screenshot 2024-01-10 120545](https://github.com/Shivendra-Pratap-Dixit/Nykaa/assets/112815087/b8ec337e-cb77-4bfa-ac1f-ad4188a54ece)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# <h2>Signup Page : </h2>
+![Screenshot 2024-01-10 120525](https://github.com/Shivendra-Pratap-Dixit/Nykaa/assets/112815087/0f739fc5-abf4-4dde-8d9d-c30bc82854b3)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# <h2>Admin Dasboard Page : </h2>
 
-### Code Splitting
+![Screenshot 2024-01-10 121701](https://github.com/Shivendra-Pratap-Dixit/Nykaa/assets/112815087/8999457d-7d7e-4a02-b539-88c8c722e40e)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# <h2>Add Product Modal : </h2>
+![Screenshot 2024-01-10 121712](https://github.com/Shivendra-Pratap-Dixit/Nykaa/assets/112815087/73e5b88d-a29b-4741-be02-83cedf2a9446)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
