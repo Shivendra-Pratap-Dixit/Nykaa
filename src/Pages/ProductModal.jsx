@@ -26,6 +26,7 @@ const ProductModal = ({ isOpen, onClose }) => {
     const newProd={name,gender,category,price,description,picture}
     // console.log(newProd)
 dispatch(postProd(newProd))
+alert("Product Added Succesfully")
 dispatch(getProd())
     onClose();
   };
@@ -34,7 +35,7 @@ dispatch(getProd())
     <div
       className={`${
         isOpen ? 'block' : 'hidden'
-      } fixed inset-0 overflow-y-auto`}
+      } fixed inset-0 overflow-x-auto`}
     >
       <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
         <div

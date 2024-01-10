@@ -36,7 +36,7 @@ export const postProd = (newProd) => (dispatch) => {
       }
     )
     .then((res) => {
-      console.log(res.data);
+      // console.log(res.data);
       dispatch({ type: PROD_POST_SUCC, payload: res.data });
     })
     .catch((error) => {

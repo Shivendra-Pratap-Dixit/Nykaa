@@ -1,7 +1,7 @@
 import React from 'react';
 import dashboard from "../Images/element-3.svg";
 import analytics from "../Images/clipboard-tick.svg";
-import { ReactComponent as LogoutIcon } from "../Images/setting-2.svg";
+import LogoutIcon  from "../Images/setting-2.svg";
 
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -17,7 +17,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className='bg-#FFFFFF w-57.5 items-center p-4'>
+    <div className='bg-#a88282 w-57.5 items-center p-4'>
       <div className='mt-16'>
         <h1 className='text-center font-poppins font-medium text-xl text-blue-600'>Nykaa Dashboard</h1>
       </div>
